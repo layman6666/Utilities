@@ -29,7 +29,7 @@ namespace Utilities
         Traning = 126
     }
 
-    class ActiveMEDbHelper
+   public class ActiveMEDbHelper
     {
 
         private SqlConnection CONN;

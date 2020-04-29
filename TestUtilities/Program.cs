@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Utilities;
+using Utilities.Helpers;
 
 namespace TestUtilities
 {
@@ -52,13 +53,32 @@ namespace TestUtilities
 
             //string a=  Md5Helper.GetFileMd5("testc.xlsx");
             //string b = Md5Helper.GetStringMd5("chauncey.wang");
-           
+
 
 
             #endregion
 
 
 
-        }
+
+
+            #region test DataTableHelper
+
+            string sql = "select * from [MyQQ].[dbo].[Users]";
+            var dt = SqlHelper.GetDataTable(sql);
+
+           //var res= DataTableHelper.DataTable2Xml(dt);
+
+            //ExcelHelper.DatatableToExcel(dt, "testc.xlsx");
+            //ExcelHelper.DatatableToExcel(dt, "txst.xls");
+
+
+        //var excel = ExcelHelper.ExcelToDatatable("testc.xlsx");
+
+        #endregion
+
+
+
     }
+}
 }

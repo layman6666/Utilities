@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Utilities</RootNamespace>
     <AssemblyName>Utilities</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -66,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ActiveMEDbHelper.cs" />
+    <Compile Include="Helpers\DataTableHelper.cs" />
     <Compile Include="Helpers\EmailHelper.cs" />
     <Compile Include="Helpers\ExcelHelper.cs" />
     <Compile Include="ExtentionMethods\ExtDataTable.cs" />
